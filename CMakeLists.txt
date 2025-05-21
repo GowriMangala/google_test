@@ -16,7 +16,11 @@ set(Headers
     Example.hpp
 )
 set(Sources 
-    Example.cpp 
+    Example.cpp
+    Example1.cpp
+    Example2.cpp
+    Example3.cpp
+    
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})
