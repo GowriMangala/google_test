@@ -14,7 +14,7 @@ enable_testing()
 include(FetchContent)
 FetchContent_Declare(
   googletest
-  URL https://github.com/google/googletest/archive/refs/heads/main.zip
+  URL https://github.com/GowriMangala/google_test.git
 )
 FetchContent_MakeAvailable(googletest)
  
