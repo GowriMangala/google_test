@@ -1,19 +1,16 @@
-cmake_minimum_required(VERSION 3.8)
-
-set(This ExampleTests)
-
+# Name of the test executable
+set(TestName ExampleTest)
+ 
+# Source files for the test
 set(Sources 
     ExampleTest.cpp
 )
-
-add_executable(${This} ${Sources})
-
-target_link_libraries(${This} PUBLIC 
-       gtest_main 
-       Example 
-)
-
-add_test(
-    NAME ${This}  
-    COMMAND ${This}
-)
+ 
+# Create the test executable
+add_executable(${TestName} ${Sources})
+ 
+# Link it with gtest, gtest_main, and the main Example library
+target_link_libraries(${TestName} gtest gtest_main Example)
+ 
+# Register the test with CTest
+add_test(NAME ${TestName} COMMAND ${TestName})
