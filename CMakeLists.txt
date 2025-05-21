@@ -14,7 +14,7 @@ enable_testing()
 include(FetchContent)
 FetchContent_Declare(
   googletest
-  URL https://github.com/GowriMangala/google_test.git
+  URL https://github.com/google/googletest/archive/refs/heads/main.zip
 )
 FetchContent_MakeAvailable(googletest)
  
@@ -29,13 +29,10 @@ set  (Sources
     src/mirror_control.cpp
     )
    
- 
- 
 add_library(${This} STATIC ${Sources} ${Headers})
  
 #target_link_libraries(${This} PUBLIC Example)
  
  
 add_subdirectory(test)
- 
  
