@@ -4,6 +4,8 @@ extern int mirror_fold();
 extern int mirror_selection();
 extern int mirror_control();
 
+
+
 enum ignition_switch {OFF, ACC, ON, START};
 enum fold_unfold_mirror_switch {FOLD = 0, UNFOLD = 1};
 enum selection_mirror_switch {NEUTRAL = 0, LEFT = 1, RIGHT = 2};
